@@ -1,0 +1,300 @@
+.main{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+   
+}
+
+
+.thumb_carousel{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 6rem 2rem 6rem;
+}
+
+.background_image_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+.background_image{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.carousel_container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 3rem;
+}
+
+.games{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.logo_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.logo{
+    height: 13rem;
+    width: 25rem;
+}
+
+.lang_buttons{
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.lang_btn{
+    border: 1px solid #ffcb05;
+    background-color: #ffcb05;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form_container{
+   width: 100%;
+   padding: 4rem;
+   text-align: center;
+}
+
+.form_sub_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    gap: 2rem;
+}
+
+.number_input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 4rem;
+
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.checkbox_input{
+    height: 2rem;
+    width: 2rem;
+    color: black;
+    background-color: #ffcb05;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.checkbox_input:checked {
+    background: #ffcb05; /* Change background color when checked */
+    color:black
+  }
+
+.form_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.btn_container{
+    width: 100%;
+}
+
+
+.subscribe_btn{
+    border: none;
+    background-color: #ffcb05;
+    color: black;
+    font-size: 2rem;
+    /* padding: 2rem; */
+    width: 100%;
+    border-radius: 4rem;
+    font-weight: 800;
+    width: 100%;
+    height: 5rem;
+    
+}
+
+
+ .close_btn{
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    font-size: 2rem;
+    height: 5rem;
+    /* padding: 2rem; */
+    width: 100%;
+    border-radius: 4rem;
+    font-weight: 700; 
+    width: 100%;
+}
+
+.close_btn:hover{
+    background-color: #61686e;
+}
+
+
+
+.bottom_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.bottom_background_image_div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bottom_background_image{
+    width: 100%;
+    opacity: 0.6;
+    height: 100%;
+}
+
+.terms_container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    color: grey;
+    z-index: 99;
+    width: 100%;
+    padding: 2rem 6rem 2rem 6rem;
+}
+
+.terms_container ul{
+    padding: 1rem 5rem 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+li{
+    font-size: 1.5rem;
+}
+
+
+.footer_container{
+    background-color: black;
+    width: 100%;
+    padding: 3rem;
+    height: 7rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+} 
+
+.footer_container p{
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width:768px) {
+    .terms_container{
+        padding: 2rem;
+    }
+
+    .terms_container ul{
+        padding: 1rem 1rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+    }
+   
+}
+
+
+
+/* 
+@media only screen and (max-width:768px) {
+    .lang_buttons{
+        right: 35%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+    }
+    .terms_container{
+        position: absolute;
+       
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        color: grey;
+        z-index: 99;
+        width: 100%;
+        padding:1rem ;
+    }
+    .terms_container ul{
+        padding: 2rem ;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .bottom_container{
+    
+        height: 50rem;
+    }
+} */
+/* 
+@media only screen and (max-width:1024px) {
+    
+    .bottom_container{
+    
+        height: 50rem;
+    }
+} */

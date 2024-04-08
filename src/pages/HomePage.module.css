@@ -1,0 +1,122 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 4rem 1rem 4rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo_div{
+    width: 20rem;
+    height: 12rem;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu_list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+
+.menu_icon{
+    display: none;
+    color: white;
+    cursor: pointer;
+    /* font-size: 4rem; */
+}
+
+.link{
+    font-size: 1.6rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.thumb_carousel{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 6rem 2rem 6rem;
+}
+
+.background_image_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.background_image{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.carousel_container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.games{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.bottom_container{
+    width: 100%;
+    position: relative;
+}
+.bottom_background_image_div{
+    width: 120vw;
+    margin-left: -10rem;
+    min-height: 5rem;
+    position: absolute;
+    top: -10rem;
+    left: 0;
+}
+.bottom_background_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+
+@media only screen and (max-width:920px){
+    .menu_list{
+        display: none;
+    }
+    .menu_icon{
+        display: block;  
+    }
+}
